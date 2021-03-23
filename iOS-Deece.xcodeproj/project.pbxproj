@@ -8,18 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		AEB2E69A260968E8004327AC /* iOS_DeeceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB2E699260968E8004327AC /* iOS_DeeceApp.swift */; };
-		AEB2E69C260968E8004327AC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB2E69B260968E8004327AC /* ContentView.swift */; };
+		AEB2E69C260968E8004327AC /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB2E69B260968E8004327AC /* MenuView.swift */; };
 		AEB2E69E260968EB004327AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEB2E69D260968EB004327AC /* Assets.xcassets */; };
 		AEB2E6A1260968EB004327AC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEB2E6A0260968EB004327AC /* Preview Assets.xcassets */; };
+		AEB2E6AA2609690A004327AC /* MenuData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB2E6A92609690A004327AC /* MenuData.swift */; };
+		AEB2E6AD26096978004327AC /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB2E6AC26096978004327AC /* ViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		AEB2E696260968E8004327AC /* iOS-Deece.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-Deece.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEB2E699260968E8004327AC /* iOS_DeeceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_DeeceApp.swift; sourceTree = "<group>"; };
-		AEB2E69B260968E8004327AC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		AEB2E69B260968E8004327AC /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 		AEB2E69D260968EB004327AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AEB2E6A0260968EB004327AC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AEB2E6A2260968EB004327AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AEB2E6A92609690A004327AC /* MenuData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuData.swift; sourceTree = "<group>"; };
+		AEB2E6AC26096978004327AC /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,10 +57,12 @@
 			isa = PBXGroup;
 			children = (
 				AEB2E699260968E8004327AC /* iOS_DeeceApp.swift */,
-				AEB2E69B260968E8004327AC /* ContentView.swift */,
+				AEB2E69B260968E8004327AC /* MenuView.swift */,
 				AEB2E69D260968EB004327AC /* Assets.xcassets */,
 				AEB2E6A2260968EB004327AC /* Info.plist */,
 				AEB2E69F260968EB004327AC /* Preview Content */,
+				AEB2E6A92609690A004327AC /* MenuData.swift */,
+				AEB2E6AC26096978004327AC /* ViewModel.swift */,
 			);
 			path = "iOS-Deece";
 			sourceTree = "<group>";
@@ -138,7 +144,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AEB2E69C260968E8004327AC /* ContentView.swift in Sources */,
+				AEB2E69C260968E8004327AC /* MenuView.swift in Sources */,
+				AEB2E6AA2609690A004327AC /* MenuData.swift in Sources */,
+				AEB2E6AD26096978004327AC /* ViewModel.swift in Sources */,
 				AEB2E69A260968E8004327AC /* iOS_DeeceApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
