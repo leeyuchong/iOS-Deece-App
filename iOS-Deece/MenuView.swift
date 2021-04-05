@@ -10,8 +10,22 @@ import SwiftUI
 struct MenuView: View {
     @ObservedObject var viewModel: ViewModel
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+            List(viewModel.menuItems, id: \.id) { item in
+                HStack{
+                    Text(item.name)
+                    Button(action: {
+                        viewModel.savedItems.contains(item) ? viewModel.unstar(item) : viewModel.star(item)
+                    }) {
+                        Image(systemName: viewModel.savedItems.contains(item) ? "trash" : "star.fill" )
+                            .font(.body)
+                            .padding()
+                            .foregroundColor(.white)
+                            .background(Color.yellow)
+                            .cornerRadius(40)
+                    }
+                    
+                }
+            }
     }
 }
 

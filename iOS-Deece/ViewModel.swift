@@ -12,4 +12,22 @@ class ViewModel: ObservableObject {
     init(){
         model = MenuData()
     }
+    
+    // MARK: - Access to the Model
+    var menuItems: [MenuItem] {
+        model.menuItems
+    }
+    
+    var savedItems: [MenuItem] {
+        model.savedItems
+    }
+    
+    // MARK:- INTENT
+    func star(_ item: MenuItem){
+        model.star(item)
+    }
+    
+    func unstar(_ item: MenuItem){
+        model.unstar(item)
+    }
 }
